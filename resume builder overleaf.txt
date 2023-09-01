@@ -1,0 +1,340 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\documentclass{article}
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape KOTHA TEJASRI} \\ \vspace{1pt}
+    Hyderabad \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\href{tel:8953525095}{ \underline{7794984013}} ~ \href{mailto:manassarthak@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{tejasrikotha03@gmail.com}} ~ 
+    \href{https://linkedin.com/in/manasarthak/}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/kotha-tejasri-31b9b9228/}}  ~
+    \href{https://github.com/tejadadisetty24}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/tejadadisetty24}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gurunanak Institute of Technology}{2020 - 2024}
+      {\textit{Bachelor of Technology in Computer Science Engineering} \textbf{CGPA - 7.06/10}}{Hyderabad, Telangana}
+  \resumeSubHeadingListEnd
+  \vspace{-15pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Python and Libraries
+                \item HTML 
+                \item CSS
+                \item JavaScript
+                \item Java
+                \item C
+                \item SQL
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+ 
+ \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading{\href{https://github.com/manasarthak/Feature-Extraction-and-Electrode-Selection-for-Electroencephalogram-Based-emotion-classification}{\raisebox{-0.2\height}{\textbf{Feature Extraction and Channel Selection with Merged RNN for Emotion Classification \faGithub}}
+          }}
+          {}
+          {\textit{\textbf{Tech Stack:} Python, Keras, TensorFlow, Google Collab} \hspace{213pt} \small{\textbf{May 2022-August 2022}} }
+          {}
+          \resumeItemListStart
+            \resumeItem{Performed Feature Extraction from EEG Signal in time and frequency domain.}
+            \resumeItem{Selected 12 channels from 32 using classification accuracy through Support Vector Machine as a metric.}
+            \resumeItem{Employed LSTM based sub-model for each selected channel and merged them to perform final emotion classification.}
+            \resumeItem{S. Ashish, S.Sarthak et al. \href{https://drive.google.com/file/d/1VuYUnAEuChHbETD0UY-qr8rUx1MSkHeL/view?usp=sharing}{\textbf{"Electroencephalogram Electrode Selection and Parallel Merged Recurrent Neural Network for Emotion Classification"}} Journal of Systems Science and Systems Engineering , Oct 2022. [Communicated]}
+          \resumeItemListEnd
+    \vspace{-3pt}
+       \resumeSubheading{\href{https://github.com/manasarthak/Emotion-classification-using-physiological-signal}{\raisebox{-0.2\height}{\textbf{Emotion classification using physiological signals \faGithub}} 
+          }}
+          {}
+          {\textit{\textbf{Tech Stack:} Python, Keras, Jupyter Notebook}}
+          {\textbf{Jan. 2022-April 2022}}
+          \resumeItemListStart
+            \resumeItem{Implemented two Machine Learning techniques to wit K Nearest Neighbours and Support Vector Machine to perform emotion classification in the valence and arousal domain.}
+            \resumeItem{Also implemented emotion classification using Long Short Term Memory with the help of Stack Autoencoder.}
+            \resumeItem{Calculated and compared the accuracies achieved in the classification of valence and arousal dimensions using EEG signal from the publicly available DEAP dataset.}
+            \resumeItem{S. Ashish, S.Sarthak et al. \href{https://drive.google.com/file/d/1u9NAMrJNq9qm8NVHR3-u8NL8Wwjtjc2d/view?usp=sharing}{ \textbf{"A Classification of Spatiotemporal Power Spectrum of Electroencephalogram Signal for Emotion Recognition"}} IEEE Transactions on Computational Social Systems, Sep 16, 2022.[communicated]}
+          \resumeItemListEnd
+      
+      \vspace{-3pt}
+        \resumeSubheading{\href{https://github.com/manasarthak/diagnosis-of-covid-pneumonia-and-control-using-chest-xrays}{\raisebox{-0.2\height}{\textbf{Diagnosis of Covid/Pneumonia/Control Patients using chest X-ray images \faGithub}}}}{}{\textit{\textbf{Tech Stack:} Python, Jupyter Notebook}  }{\textbf{Feb 2022- April 2022}} 
+          \resumeItemListStart
+            \resumeItem{Implemented using 5 pre trained CNN Models DenseNet201, EfficientNet, Inception, ResNet50v2, Xception using weighted ensembling for final prediction.}
+          \resumeItemListEnd
+          
+    \vspace{-3pt}
+        \resumeSubheading{\href{https://drive.google.com/file/d/1CY376NiTO_IH7d1pz7IyNysuKyPe1W6f/view?usp=sharing}{\raisebox{-0.2\height}{\textbf{EEG-based Disease Detection Techniques, Methods and Classification - A Case Study}}}}
+        {}{Computer Science Review, Elsevier [communicated]}{\textbf{Sep 2022 - Oct 2022}}
+        \resumeItemListStart
+        \item{The study focused on critically analyzing and reviewing the current research in the field of Neurological Disorder Detection.}
+        \resumeItemListEnd
+        
+            
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Licenses and Certifications}
+  \vspace{-7pt}
+  \resumeSubHeadingListStart
+  \resumeItemListStart
+
+    \resumeItem
+      {\href{https://www.coursera.org/account/accomplishments/certificate/Y5NDBZA5K4CQ}{\raisebox{-0.2\height}{\textbf{Machine Learning -} \normalfont{Online course by Stanford University} \ExternalLink}}} \hfill \textbf{June 2022}
+     
+      
+    \resumeItem
+      {\href{https://www.coursera.org/account/accomplishments/verify/3TDH47QDY94V}{\raisebox{-0.2\height}\underline{\textbf{Structuring Machine Learning Projects  -} \normalfont{Online course by DeepLearning.ai} \ExternalLink}}}\hfill \textbf{June 2022}
+      
+    
+    \resumeItem
+      {\href{https://www.coursera.org/account/accomplishments/verify/WF38PJUPK9H3}{\raisebox{-0.2\height}\underline{\textbf{Neural Networks and Deep Learning -} \normalfont{Online course by DeepLearning.ai} \ExternalLink}}}\hfill\textbf{June 2022}
+    
+    
+    \resumeItem
+      {\href{https://www.coursera.org/account/accomplishments/verify/2CMAW7XRDKPZ}{\raisebox{-0.2\height}\underline{\textbf{Improving DNNs: Hyperparameter Tuning, Regularization and Optimization -} \ExternalLink}}}\hfill\textbf{June 2022}
+      \\
+      {- Online course by DeepLearning.ai}
+      \vspace{-3pt}
+ 
+      
+     \resumeItem
+      {\href{https://coursera.org/verify/4VG78WBV733D}{\raisebox{-0.2\height}\underline{\textbf{Convolutional Neural Networks -} \normalfont{Online course by DeepLearning.ai} \ExternalLink}}}\hfill\textbf{July 2022}
+     
+      
+      \resumeItem
+      {\href{https://www.credly.com/go/1tg6KMTf}{\raisebox{-0.2\height}\underline{\textbf{Deep Learning -} \normalfont{Online course by DeepLearning.ai} \ExternalLink}}}\hfill\textbf{August 2022}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \hspace{99pt} Python, Java, C, HTML/CSS, JavaScript, SQL, MATLAB} \\
+     \textbf{Technologies/Frameworks}{: \hspace{31pt}Keras,  TensorFlow,Linux, GitHub} \\
+     \textbf{Developer Tools}{: \hspace{72pt} VS Code, Eclipse, Jupyter Notebook, Google Collab} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Standardized Test Scores}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Graduate Records Examination - 327/340}}{June 2022}
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-2pt,  parsep=5pt]
+            \vspace{-10pt}
+                \item Quantitative Reasoning - 169/170
+                \item Verbal Reasoning - 158/170
+                \item Analytical Writing - 4.0/6
+            \end{itemize}
+        \end{multicols}
+         \vspace{-10pt}
+         \resumeProjectHeading{\textbf{Test Of English as a Foreign Language - 110/120}}{July 2022}
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt,  parsep=5pt]
+                \item Reading - 30/30
+                \item Listening - 30/30
+                \item Speaking - 23/30
+                \item Writing - 27/30
+            \end{itemize}
+        \end{multicols}
+        % \resumeProjectHeading{\textbf{Graduate Records Examination - 327/340}}{June 2022}
+        %     \resumeItemListStart
+        %         \resumeItem{Quantitative Reasoning - 169/170}
+        %         \resumeItem{Verbal Reasoning - 158/170}
+        %         \resumeItem{Analytical Writing - 4.0/6}
+        %     \resumeItemListEnd
+        %     \vspace{-15pt}
+        % \resumeProjectHeading{\textbf{Test Of English as a Foreign Language - 110/120}}{July 2022}
+        %     \resumeItemListStart
+        %         \resumeItem{Reading - 30/30}
+        %         \resumeItem{Listening - 30/30}
+        %         \resumeItem{Speaking - 23/30}
+        %         \resumeItem{Writing - 27/30}
+        %     \resumeItemListEnd
+        %     \vspace{-15pt}
+        % \resumeProjectHeading{\textbf{Member of Cricket Team - IIIT Kota}}{Aug. 2019--Present}
+        % \vspace{-25pt}
+        % \resumeProjectHeading{\textbf{Member of Football Team - IIIT Kota}}{Jan. 2020--Present}
+    \resumeSubHeadingListEnd
+    
+    \vspace{-15pt}
+    
+\section{Extracurriculars}
+\resumeItemListStart
+    
+    \resumeItem{\textbf{\href{https://drive.google.com/file/d/1aC8V8RSs_HomHDmgoHecVzYW2j4LiWMz/view?usp=sharing}{Teaching}} - Counseled and taught several impoverished and underprivileged children.}\hfill \textbf{Aug. 2021--Dec 2021}
+    
+    \resumeItem{\textbf{Member of Cricket Team - IIIT Kota}}\hfill\textbf{Aug. 2019--Present}
+    
+     \resumeItem{\textbf{Member of Football Team - IIIT Kota}} \hfill \textbf{Jan. 2020--Present}
+    
+   
+    
+
+
+\end{document}
